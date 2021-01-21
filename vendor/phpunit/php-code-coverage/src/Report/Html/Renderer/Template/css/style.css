@@ -1,0 +1,243 @@
+body {
+ padding-top: 10px;
+}
+
+.popover {
+ max-width: none;
+}
+
+.glyphicon {
+ margin-right:.25em;
+}
+
+.table-bordered>thead>tr>td {
+ border-bottom-width: 1px;
+}
+
+.table tbody>tr>td, .table thead>tr>td {
+ padding-top: 3px;
+ padding-bottom: 3px;
+}
+
+.table-condensed tbody>tr>td {
+ padding-top: 0;
+ padding-bottom: 0;
+}
+
+.table .progress {
+ margin-bottom: inherit;
+}
+
+.table-borderless th, .table-borderless td {
+ border: 0 !important;
+}
+
+.table tbody tr.covered-by-large-tests, li.covered-by-large-tests, tr.success, td.success, li.success, span.success {
+ background-color: #dff0d8;
+}
+
+.table tbody tr.covered-by-medium-tests, li.covered-by-medium-tests {
+ background-color: #c3e3b5;
+}
+
+.table tbody tr.covered-by-small-tests, li.covered-by-small-tests {
+ background-color: #99cb84;
+}
+
+.table tbody tr.danger, .table tbody td.danger, li.danger, span.danger {
+ background-color: #f2dede;
+}
+
+.table tbody td.warning, li.warning, span.warning {
+ background-color: #fcf8e3;
+}
+
+.table tbody td.info {
+ background-color: #d9edf7;
+}
+
+td.big {
+ width: 117px;
+}
+
+td.small {
+}
+
+td.codeLine {
+ font-family: monospace;
+ white-space: pre;
+}
+
+td span.comment {
+ color: #888a85;
+}
+
+td span.default {
+ color: #2e3436;
+}
+
+td span.html {
+ color: #888a85;
+}
+
+td span.keyword {
+ color: #2e3436;
+ font-weight: bold;
+}
+
+pre span.string {
+ color: #2e3436;
+}
+
+span.success, span.warning, span.danger {
+ margin-right: 2px;
+ padding-left: 10px;
+ padding-right: 10px;
+ text-align: center;
+}
+
+#classCoverageDistribution, #classComplexity {
+ height: 200px;
+ width: 475px;
+}
+
+#toplink {
+ position: fixed;
+ left: 5px;
+ bottom: 5px;
+ outline: 0;
+}
+
+svg text {
+ font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+ font-size: 11px;
+ color: #666;
+ fill: #666;
+}
+
+.scrollbox {
+ height:245px;
+ overflow-x:hidden;
+ overflow-y:scroll;
+}
+
+
+.main-section{
+    background-color: #F8F8F8;
+}
+.dropdown{
+    float:right;
+    padding-right: 30px;
+}
+.btn{
+    border:0px;
+    margin:10px 0px;
+    box-shadow:none !important;
+}
+.dropdown .dropdown-menu{
+    padding:20px;
+    top:30px !important;
+    width:350px !important;
+    left:-110px !important;
+    box-shadow:0px 5px 30px black;
+}
+.total-header-section{
+    border-bottom:1px solid #d2d2d2;
+}
+.total-section p{
+    margin-bottom:20px;
+}
+.cart-detail{
+    padding:15px 0px;
+}
+.cart-detail-img img{
+    width:100%;
+    height:100%;
+    padding-left:15px;
+}
+.cart-detail-product p{
+    margin:0px;
+    color:#000;
+    font-weight:500;
+}
+.cart-detail .price{
+    font-size:12px;
+    margin-right:10px;
+    font-weight:500;
+}
+.cart-detail .count{
+    color:#C2C2DC;
+}
+.checkout{
+    border-top:1px solid #d2d2d2;
+    padding-top: 15px;
+}
+.checkout .btn-primary{
+    border-radius:50px;
+    height:50px;
+}
+.dropdown-menu:before{
+    content: " ";
+    position:absolute;
+    top:-20px;
+    right:50px;
+    border:10px solid transparent;
+    border-bottom-color:#fff;
+}
+
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail .caption{
+    margin: 7px;
+}
+
+.page {
+    margin-top: 50px;
+}
+
+.btn-holder{
+    text-align: center;
+}
+
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+        width:20%;
+        display: inline !important;
+    }
+    .actions .btn{
+        width:36%;
+        margin:1.5em 0;
+    }
+
+    .actions .btn-info{
+        float:left;
+    }
+    .actions .btn-danger{
+        float:right;
+    }
+
+    table#cart thead { display: none; }
+    table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+    table#cart tbody tr td:first-child { background: #333; color: #fff; }
+    table#cart tbody td:before {
+        content: attr(data-th); font-weight: bold;
+        display: inline-block; width: 8rem;
+    }
+
+
+
+    table#cart tfoot td{display:block; }
+    table#cart tfoot td .btn{display:block;}
+
+}
